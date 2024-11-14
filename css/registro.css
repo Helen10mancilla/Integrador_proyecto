@@ -1,0 +1,84 @@
+/* Estilos generales */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5; /* Fondo blanco */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Contenedor del formulario de registro */
+.register-container {
+    background: #ffffff; /* Fondo blanco para la sección del registro */
+    border: 1px solid #ddd; /* Borde suave */
+    border-radius: 15px;
+    padding: 40px 30px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    width: 350px; /* Ancho del formulario */
+}
+
+h2 {
+    color: #1a1a2e; /* Azul oscuro */
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px; /* Tamaño del título */
+}
+
+/* Estilo de los campos de entrada */
+input[type="text"],
+input[type="password"],
+input[type="email"] {
+    width: calc(100% - 20px);
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    outline: none;
+    box-sizing: border-box;
+    font-size: 16px;
+}
+
+/* Color de los placeholders */
+input[type="text"]::placeholder,
+input[type="password"]::placeholder,
+input[type="email"]::placeholder {
+    color: #aaa;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    margin-top: 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #1a1a2e; /* Botón azul oscuro */
+    color: #fff;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0f3460; /* Cambio de color al hacer hover */
+}
+
+/* Estilo del texto de ayuda */
+p {
+    color: #555;
+    text-align: center;
+    font-size: 14px;
+}
+
+/* Estilo del enlace */
+a {
+    color: #1a1a2e; /* Azul oscuro para enlaces */
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}

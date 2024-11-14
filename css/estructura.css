@@ -1,0 +1,97 @@
+/* Estilo para la imagen de fondo */
+body {
+    font-family: 'Roboto', sans-serif;
+    background: url('../img/granja.jpg') no-repeat center center fixed;
+    background-size: cover; /* Hace que la imagen cubra toda la pantalla */
+    color: white; /* Mantiene el texto en blanco para que sea legible */
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: rgba(0, 0, 0, 0.7); /* Fondo oscuro con transparencia para el encabezado */
+    padding: 20px;
+    text-align: center;
+}
+
+header h1 {
+    color: #FFD700; /* Cambia el color del título */
+    font-size: 2.5rem;
+}
+
+/* Estilos generales para el contenido del panel */
+.panel-container {
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.6); /* Fondo oscuro con transparencia */
+    border-radius: 10px;
+    margin: 40px auto;
+    max-width: 1200px;
+}
+
+h2 {
+    color: #FFD700; /* Color para los subtítulos */
+    margin-bottom: 20px;
+}
+
+/* Estilos para las tablas o secciones del panel */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: rgba(255, 255, 255, 0.9); /* Fondo claro con transparencia */
+    color: black;
+    margin-bottom: 30px;
+}
+
+th, td {
+    padding: 15px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+th {
+    background-color: #3F51B5; /* Azul oscuro para el encabezado de la tabla */
+    color: white;
+}
+
+td {
+    background-color: #f2f2f2;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #28a745; /* Botones verdes */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+/* Estilos adicionales para el menú de navegación */
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+    transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.3); /* Efecto de hover con transparencia */
+    border-radius: 5px;
+}

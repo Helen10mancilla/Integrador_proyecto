@@ -1,0 +1,93 @@
+/* Estilo para la imagen de fondo */
+body {
+    font-family: 'Roboto', sans-serif;
+    background: url('../img/diseño.jpeg') no-repeat center center fixed;
+    background-size: cover; /* Hace que la imagen cubra toda la pantalla */
+    color: white; /* Mantiene el texto en blanco para que sea legible */
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: rgba(0, 0, 0, 0.7); /* Fondo oscuro con transparencia para el encabezado */
+    padding: 15px;
+}
+
+h1 {
+    color: #FFD700; /* Cambia el color del título si lo deseas */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+    transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.3); /* Efecto de hover con transparencia */
+    border-radius: 5px;
+}
+
+/* Estilo para las secciones */
+.contenido {
+    display: none;
+    padding: 20px;
+}
+
+.contenido-activo {
+    display: block;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.6); /* Fondo con transparencia */
+    border-radius: 10px;
+    margin: 20px auto;
+    max-width: 800px;
+}
+
+.categorias-grid, .productos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 15px;
+}
+
+.categoria, .producto {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.categoria:hover, .producto:hover {
+    transform: scale(1.05);
+}
+
+/* Botón para realizar la compra */
+button {
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #218838;
+}
+

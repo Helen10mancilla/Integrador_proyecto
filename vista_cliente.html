@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>La Gran Cosecha - Cliente</title>
+    <link rel="stylesheet" href="./css/cliente.css">
+</head>
+<body>
+    <header>
+        <h1>La Gran Cosecha</h1>
+        <nav>
+            <ul>
+                <li><a href="#" id="inicioBtn">Inicio</a></li>
+                <li><a href="#" id="categoriasBtn">Categorías</a></li>
+                <li><a href="#" id="carritoBtn">Carrito (<span id="carritoCantidad">0</span>)</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="inicio" class="contenido-activo">
+        <h2>Bienvenido a La Gran Cosecha</h2>
+        <p>Aquí encontrarás productos frescos, de calidad, a los mejores precios. Explora nuestras categorías y descubre una gran variedad de productos.</p>
+    </section>
+    
+
+    <section id="categorias" class="contenido">
+        <h2>Categorías de Productos</h2>
+        <div class="categorias-grid">
+            <div class="categoria" onclick="mostrarProductosPorCategoria('Verduras')">
+                <h3>Verduras</h3>
+            </div>
+            <div class="categoria" onclick="mostrarProductosPorCategoria('Frutas')">
+                <h3>Frutas</h3>
+            </div>
+            <div class="categoria" onclick="mostrarProductosPorCategoria('Tubérculos')">
+                <h3>Tubérculos</h3>
+            </div>
+         
+        </div>
+    </section>
+
+    <section id="productos" class="contenido">
+        <h2>Productos</h2>
+        <div id="productosCliente" class="productos-grid">
+            <!-- Aquí se mostrarán los productos según la categoría -->
+        </div>
+    </section>
+
+    <section id="carrito" class="contenido">
+        <h2>Carrito de Compras</h2>
+        <ul id="listaCarrito">
+            <!-- Aquí se mostrarán los productos del carrito -->
+        </ul>
+        <p>Total: S/ <span id="totalCarrito">0</span></p>
+        <button onclick="realizarCompra()">Realizar Compra</button>
+    </section>
+
+    <script src="./js/cliente.js"></script>
+</body>
+</html>

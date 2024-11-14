@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="./css/login.css">
+</head>
+<body>
+    <div class="container">
+        <div class="login-form">
+            <h2>Login</h2>
+            <!-- Formulario de inicio de sesión -->
+            <form id="loginForm">
+                <input type="text" id="username" placeholder="Usuario" required>
+                <input type="password" id="password" placeholder="Contraseña" required>
+                <button type="submit">Iniciar Sesión</button>
+            </form>
+
+            <!-- Selección de rol (aparecerá después de que el usuario inicie sesión) -->
+            <div id="roleSelection" style="display: none;">
+                <h3>Selecciona tu rol</h3>
+                <label>
+                    <input type="radio" name="rol" value="admin"> Administrador
+                </label>
+                <label>
+                    <input type="radio" name="rol" value="cliente"> Cliente
+                </label>
+                <button id="roleSubmit">Continuar</button>
+            </div>
+            
+            <p>No tienes cuenta? <a href="./registro.html">Regístrate aquí</a></p>
+        </div>
+    </div>
+    <script src="./js/script.js"></script>
+</body>
+</html>
+
